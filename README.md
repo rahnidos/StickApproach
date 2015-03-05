@@ -17,4 +17,4 @@ If the file in path is older that x days it will change the name of this file TA
 It takes three parameters:
 - -p path to directory
 - -t tag sign (default !!!)
-- -d how many days file can be safe in path.
+- -d how many days file can be safe in path (default 30).
