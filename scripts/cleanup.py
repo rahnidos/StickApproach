@@ -16,12 +16,12 @@ now = time.time()
 for obj in os.listdir(path):
     f=path+"\\"+obj
     if sign in obj[:3]:
-        print("Removing: "+f)
+#        print("Removing: "+f)
         if os.path.isdir(f): shutil.rmtree(f)
         else: os.remove(f)
         continue
     if os.path.getmtime(f) < now-dayz:
-        print("Tagging: "+f)
+#        print("Tagging: "+f)
         newname=path+"\\"+sign+obj
         os.rename(f,newname)
 
